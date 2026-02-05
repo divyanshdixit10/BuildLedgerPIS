@@ -18,7 +18,8 @@ import {
   ChevronLeft,
   ChevronRight,
   User,
-  Bell
+  Bell,
+  Monitor
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '../lib/utils';
@@ -40,6 +41,7 @@ const MainLayout = () => {
     { label: 'Materials & Services', path: '/materials', icon: Package, roles: ['ADMIN', 'EDITOR', 'VIEWER'] },
     { label: 'Payments', path: '/payments', icon: Wallet, roles: ['ADMIN', 'EDITOR', 'VIEWER'] },
     { label: 'Vendor Ledger', path: '/vendors', icon: Users, roles: ['ADMIN', 'EDITOR', 'VIEWER'] },
+    { label: 'Asset Management', path: '/assets', icon: Monitor, roles: ['ADMIN', 'EDITOR', 'VIEWER'] },
     { label: 'Daily Work', path: '/daily-work', icon: ClipboardCheck, roles: ['ADMIN', 'EDITOR', 'VIEWER'] },
     { label: 'Reports', path: '/reports', icon: FileBarChart, roles: ['ADMIN', 'EDITOR', 'VIEWER'] },
   ];

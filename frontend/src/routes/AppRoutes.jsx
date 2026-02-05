@@ -8,6 +8,7 @@ import Payments from '../pages/Payments';
 import Vendors from '../pages/Vendors';
 import DailyWork from '../pages/DailyWork';
 import Reports from '../pages/Reports';
+import Assets from '../pages/Assets';
 import Unauthorized from '../pages/Unauthorized';
 
 const ProtectedRoute = ({ allowedRoles }) => {
@@ -43,6 +44,7 @@ const AppRoutes = () => {
           <Route path="/materials" element={<Materials />} />
           <Route path="/payments" element={<Payments />} />
           <Route path="/vendors" element={<Vendors />} />
+          <Route path="/assets" element={<Assets />} />
           <Route path="/daily-work" element={<DailyWork />} />
           <Route path="/reports" element={<Reports />} />
         </Route>
